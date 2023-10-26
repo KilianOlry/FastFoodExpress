@@ -26,9 +26,12 @@ $ cd FastFoodExpress
 # Install dependencies
 $ npm install
 
-# Run the project
+# Run the accueil
 $ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch
+# Run the login
 $ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/login.css --watch
+# Run the commande
+$ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/commande.css --watch
 
 # The server will initialize in the <http://localhost:3000>
 ```
