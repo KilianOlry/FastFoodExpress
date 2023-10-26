@@ -28,6 +28,7 @@ $ npm install
 
 # Run the project
 $ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch
+$ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/login.css --watch
 
 # The server will initialize in the <http://localhost:3000>
 ```

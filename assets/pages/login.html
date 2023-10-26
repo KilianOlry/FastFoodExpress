@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://kit.fontawesome.com/817262485e.js" crossorigin="anonymous"></script>
+    <title>FastFoodExpress || Login</title>
+</head>
+
+<body>
+    <!-- Navbar mobile -->
+    <div
+        class="sm:hidden z-40 grid grid-cols-3 p-3 text-xl justify-items-center items-center border-4 border-white fixed w-full bottom-0 shadow-inner bg-yellow-300 rounded-tl-xl rounded-tr-xl">
+        <div class="cart">
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div>
+            <a href="../../index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+        <div>
+            <a href="./login.html" class="bg-red-500 p-2 rounded-full border-4 border-white">
+                <i class="fa-regular fa-user text-3xl text-white"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar desktop tablet -->
+
+    <div class="bg-red-600">
+        <section class="p-3">
+
+            <header class="flex justify-center md:justify-between items-center">
+                <a href="../../index.html">
+                    <img src="../images/logo.png" alt="Logo du restaurant" class="w-16 h-16 rounded-full">
+                </a>
+
+                <div class="hidden md:grid grid-cols-2 gap-8 content-center text-red-600">
+                    <div class="cart w-12 h-12 rounded-full bg-white flex justify-center items-center">
+                        <a href="#" class="text-xl cursor-pointer">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                    </div>
+                    <div class="profile w-12 h-12 rounded-full bg-white flex justify-center items-center">
+                        <a href="./login.html" class="text-xl cursor-pointer">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </section>
+    </div>
+
+    <!-- Section login -->
+    <div class="flex flex-col justify-center items-center">
+        <div class="sm:shadow-lg px-8 sm:px-12 w-96 py-8">
+            <div class="text-center">
+                <h1 class="font-bold text-3xl text-gray-600 p-4 capitalize">Se connecter</h1>
+                <p>
+                    Veuillez vous connecter afin d’accéder à votre profil. Si vous n’avez pas de compte :
+                    <a href="#" class="capitalize font-medium text-red-600 underline text-lg">s'inscrire</a>
+                </p>
+            </div>
+
+            <form>
+                <div class="flex flex-col gap-4 px-0 py-4">
+                    <div class="grid grid-cols-3 gap-2">
+                        <button
+                            class="bg-red-600 text-white w-full rounded-md p-2 flex flex-col justify-center gap-2 items-center hover:bg-red-600">
+                            <i class="fa-brands fa-google"></i>
+                            Google
+                        </button>
+                        <button
+                            class="bg-yellow-400 text-white w-full rounded-md p-2 flex flex-col justify-center gap-2 items-center hover:bg-blue-700">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </button>
+                        <button
+                            class="bg-gray-700 text-gray-500 w-full rounded-md p-2 flex flex-col justify-center gap-2 items-center hover:bg-gray-800">
+                            <i class="fa-brands fa-github"></i>
+                            Github
+                        </button>
+                    </div>
+                    <div>
+                        <label class="text-gray-700">Email address</label>
+                        <input class="py-2 pl-10 border border-gray-200 w-full" placeholder="Addresse mail"
+                            type="email" />
+                    </div>
+                    <div>
+                        <label class="text-gray-700">Password</label>
+                        <input class="py-2 pl-10 border border-gray-200 w-full" placeholder="Mot de passe"
+                            type="password" />
+                    </div>
+                    <div class="mb-4">
+                        <input class="mr-2 leading-tight" type="checkbox" id="checkbox_id" />
+                        <label class="text-sm" for="checkbox_id">
+                            Remember Me
+                        </label>
+                    </div>
+                    <div>
+                        <a href="#" class="capitalize font-medium text-red-600 underline text-base">mot de passe oublié
+                            ?</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- section footer -->
+    <footer class="bg-yellow-300 dark:bg-gray-900 text-gray-950">
+        <div class="mx-auto w-full max-w-screen-xl">
+            <div class="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 sm:grid-cols-2 md:grid-cols-4">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                    <ul class="text-gray-800 dark:text-gray-800 font-normal">
+                        <li class="mb-4">
+                            <a href="#" class=" hover:underline">About</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Careers</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Brand Center</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
+                    <ul class="text-gray-800 dark:text-gray-400 font-normal">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline capitalize">Nous contacter</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline capitalize">Qui sommes nous</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline capitalize">nous rejoindre</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline capitalize">nos valueurs</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underlinex capitalize">nos engagements</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                    <ul class="text-gray-800 dark:text-gray-400 font-normal">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Privacy Policy</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Licensing</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 py-6 dark:bg-gray-700">
+                    <div class="flex space-x-5 justify-center md:mt-0">
+                        <a href="#"
+                            class="text-white rounded-full bg-red-600 w-8 h-8 flex justify-center items-center hover:text-gray-900 dark:hover:text-white">
+                            <i class="fa-brands fa-facebook text-xl"></i>
+                        </a>
+
+                        <a href="#"
+                            class="text-white rounded-full bg-red-600 w-8 h-8 flex justify-center items-center hover:text-gray-900 dark:hover:text-white">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+
+                        <a href="#"
+                            class="text-white rounded-full bg-red-600 w-8 h-8 flex justify-center items-center hover:text-gray-900 dark:hover:text-white">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#"
+                            class="text-white rounded-full bg-red-600 w-8 h-8 flex justify-center items-center hover:text-gray-900 dark:hover:text-white">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
