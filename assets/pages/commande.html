@@ -4,18 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/commande.css">
     <script src="https://kit.fontawesome.com/817262485e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <title>FastFoodExpress || Commande</title>
 </head>
 
 <body>
+      <!-- Main modal -->
+  <div id="crypto-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="crypto-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <!-- Modal header -->
+            <div class="px-6 py-4 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-base font-semibold text-gray-900 lg:text-xl dark:text-white capitalize">
+                    Votre panier
+                </h3>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6">
+                <ul class="my-4 space-y-3">
+                    <li class="flex justify-between border-b-2 py-2 border-red-600 ">
+                        Burger Savoyard :
+                        <span>16.99 €</span>
+                    </li>
+                    <li class="flex justify-between border-b-2 py-2 border-red-600 ">
+                        Burger Savoyard :
+                        <span>16.99 €</span>
+                    </li>
+                    <li class="flex justify-between border-b-2 py-2 border-red-600 ">
+                        Burger Savoyard :
+                        <span>16.99 €</span>
+                    </li>
+                </ul>
+                <div class="text-right">
+                    <button class="bg-red-600 capitalize rounded-lg px-4 py-2 text-lg text-white">
+                        <a href="#">Valider</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Navbar mobile -->
     <div
         class="sm:hidden z-40 grid grid-cols-3 p-3 text-xl justify-items-center items-center border-4 border-white fixed w-full bottom-0 shadow-inner bg-yellow-300 rounded-tl-xl rounded-tr-xl">
-        <div class="cart">
-            <a href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
+        <div class="cart bg-red-500 p-2 rounded-full border-4 border-white">
+            <a href="#" type="button" data-modal-target="crypto-modal" data-modal-toggle="crypto-modal">
+                <i class="fa-solid fa-cart-shopping text-white" ></i>
             </a>
         </div>
         <div>
@@ -59,33 +100,33 @@
 
     <!-- Section login -->
 
-    <section class="h-screen flex">
+    <section class="flex flex-col lg:flex-row lg:h-screen ">
 
-        <aside class="bg-slate-950 w-80 p-3 flex flex-col items-center">
+        <aside class="bg-slate-950 w-11/12 mx-auto mt-3 rounded-xl lg:w-80 lg:mt-0 lg:rounded-none p-3 flex flex-col ">
 
-            <div class="top flex flex-col gap-y-6 w-full">
-                <h3 class="text-red-600 text-2xl text-center">Nos Plats</h3>
-                <button class="bg-white capitalize rounded-lg py-3 text-xl">
-                    <i class="fa-solid fa-burger mr-4"></i>
-                    <a href="#">Nos burgers</a>
+            <div class="flex flex-wrap justify-between p-2 lg:flex-col lg:flex-nowrap gap-6 lg:gap-y-6 w-full">
+                <h3 class="text-red-600 text-2xl text-center my-3 basis-full">Nos Plats</h3>
+                <button class="bg-white capitalize rounded-lg py-3 text-base lg:text-xl text-red-600 inline text-center">
+                    <i class="fa-solid fa-burger lg:mr-4"></i>
+                    <a href="#" class="block">Nos burgers</a>
                 </button>
-                <button class="bg-white capitalize rounded-lg py-3 text-xl">
-                    <i class="fa-solid fa-plate-wheat mr-4"></i>
-                    <a href="#">Nos frites</a>
+                <button class="capitalize rounded-lg py-3 text-base lg:text-xl hover:bg-white inline">
+                    <i class="fa-solid fa-plate-wheat lg:mr-4 text-red-600"></i>
+                    <a href="#" class="text-white hover:text-red-600 block">Nos frites</a>
                 </button>
-                <button class="bg-white capitalize rounded-lg py-3 text-xl">
-                    <i class="fa-solid fa-glass-water mr-4"></i>
-                    <a href="#">Nos boissons</a>
+                <button class="capitalize rounded-lg py-3 text-base lg:text-xl hover:bg-white inline">
+                    <i class="fa-solid fa-glass-water lg:mr-4 text-red-600"></i>
+                    <a href="#" class="text-white hover:text-red-600 block">Nos boissons</a>
                 </button>
             </div>
-
+            <div class="hidden lg:inline-block">
             <hr class="h-[2px] bg-slate-100 my-12 w-full"></hr>
 
-            <div class="icon text-center w-14 h-14 mb-10 bg-slate-100 flex items-center justify-center rounded-full">
+            <div class="icon mx-auto w-14 h-14 mb-10 bg-slate-100 flex items-center justify-center rounded-full">
                 <i class="fa-solid fa-cart-shopping text-red-600 text-3xl"></i>
             </div>
             
-            <div class="w-full">
+            <div class="w-full text-lg">
 
                 <div class="bot flex justify-between items-center text-white">
                     <p class="">Burger savoyard :</p>
@@ -107,16 +148,17 @@
                     <span class="block">50,99€</span>
                 </div>
                 <div class="btn mt-5 text-center text-white font-medium">
-                    <button class="bg-red-600 capitalize rounded-lg p-3 text-xl">
+                    <button class="bg-red-600 capitalize rounded-lg px-4 py-2 text-xl">
                         <a href="#">Valider</a>
                     </button>
                 </div>                
             </div>
+        </div>
 
 
         </aside>
 
-        <div class="left w-full grid grid-cols-3 justify-items-center p-3">
+        <div class="w-full grid grid-cols-1 gap-y-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center p-3">
             <div class="card h-[438px] w-[271px] flex items-center flex-col">
                 <div class="shadow-md rounded-full p-[1px]">
                     <img src="../images/burger-card-1.jpg" class="rounded-full h-40 w-40" alt="">
