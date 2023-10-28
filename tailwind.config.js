@@ -7,9 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-profil': "url('./assets/images/profil.jpg')",
-        'bg-burger': "url('./assets/images/burger.jpg')",
-        'bg-burger': "url('./assets/images/burger-card-1.jpg')",
+        'banner': "url('/assets/images/bg-burger.jpg')",
       },
       colors: {
         'bg-green': '#e5ffcc',
