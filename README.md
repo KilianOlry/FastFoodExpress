@@ -32,7 +32,7 @@ $ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch
 $ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/login.css --watch
 # Run the commande
 $ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/commande.css --watch
-# Run the commande
+# Run the panier
 $ npx tailwindcss -i ./assets/css/input.css -o ./assets/css/cart.css --watch
 
 # The server will initialize in the <http://localhost:3000>
