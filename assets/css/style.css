@@ -1146,10 +1146,6 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
-.bg-banner {
-  background-image: url('/assets/images/bg-burger.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
